@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/vehicles-mercado-livre/static/css/main.6ff9ef9f.css",
+    "main.js": "/vehicles-mercado-livre/static/js/main.9df8d363.js",
+    "static/media/car_wallpaper.jpg": "/vehicles-mercado-livre/static/media/car_wallpaper.63af6ea28cee3b72a8e2.jpg",
+    "index.html": "/vehicles-mercado-livre/index.html",
+    "main.6ff9ef9f.css.map": "/vehicles-mercado-livre/static/css/main.6ff9ef9f.css.map",
+    "main.9df8d363.js.map": "/vehicles-mercado-livre/static/js/main.9df8d363.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ff9ef9f.css",
+    "static/js/main.9df8d363.js"
+  ]
+}
