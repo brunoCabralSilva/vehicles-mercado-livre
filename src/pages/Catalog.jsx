@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Nav from "../components/Nav";
 import { getVehicles } from "../services";
 
 export default function Catalog() {
@@ -14,23 +13,15 @@ export default function Catalog() {
     query();
   }, []);
 
-  const returnTitle = (title) => {
-    let item = '';
-    for (let i = 0; i < 24; i += 1) {
-      item += title[i];
-    }
-    return item + '...';
-  };
-
   return(
-    <div className="h-screen w-full bg-cover bg-fixed relative">
+    <div className="h-screen w-full bg-cover bg-fixed relative pt-4">
       <img
         src={require('../images/car_wallpaper.jpg')}
         alt="fusca"
-        className="fixed w-full h-full object-cover z-10 opacity-50"
+        className="fixed w-full h-full object-cover z-10 opacity-50 top-0"
       />
-      <Nav />
-      <div className="grid grid-cols-3 gap-3 m-3 relative z-20">
+      <h1 className="bg-white mx-3 mb-3 py-3 rounded text-center z-40 text-4xl font-bolder relative">Lista de Veículos - Mercado Livre</h1>
+      <div className="grid grid-cols-3 gap-3 m-3 relative z-40">
         {
           listVehicles.length > 0 && listVehicles.map((item, index) => (
             <div
